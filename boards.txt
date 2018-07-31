@@ -14,6 +14,33 @@
 # License along with this library; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
+# KickSat (Native USB Port)
+# ---------------------------------------
+kicksat.name=KickSat Flight Computer
+kicksat.vid.0=0x2341
+kicksat.pid.0=0x804d
+kicksat.upload.tool=bossac
+kicksat.upload.protocol=sam-ba
+kicksat.upload.maximum_size=262144
+kicksat.upload.use_1200bps_touch=true
+kicksat.upload.wait_for_upload_port=true
+kicksat.upload.native_usb=true
+kicksat.build.mcu=cortex-m0plus
+kicksat.build.f_cpu=48000000L
+kicksat.build.usb_product="Arduino Zero"
+kicksat.build.usb_manufacturer="Arduino LLC"
+kicksat.build.board=SAMD_ZERO
+kicksat.build.core=arduino
+kicksat.build.extra_flags=-D__SAMD21G18A__ {build.usb_flags}
+kicksat.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+kicksat.build.openocdscript=openocd_scripts/arduino_zero.cfg
+kicksat.build.variant=kicksat
+kicksat.build.variant_system_lib=
+kicksat.build.vid=0x2341
+kicksat.build.pid=0x804d
+kicksat.bootloader.tool=openocd
+kicksat.bootloader.file=kicksat/samd21_sam_ba.bin
+
 # Arduino/Genuino Zero (Prorgamming Port)
 # ---------------------------------------
 arduino_zero_edbg.name=Arduino/Genuino Zero (Programming Port)
