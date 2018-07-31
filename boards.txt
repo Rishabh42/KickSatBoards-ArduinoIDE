@@ -41,4 +41,4 @@ kicksat.build.variant_system_lib=
 kicksat.build.vid=0x2341
 kicksat.build.pid=0x804d
 kicksat.bootloader.tool=openocd
-kicksat.bootloader.file=kicksat/samd21_sam_ba.bin
+kicksat.bootloader.file=kicksat/samd21_sam_ba_kicksat.bin
