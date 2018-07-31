@@ -19,6 +19,8 @@
 kicksat.name=KickSat Flight Computer
 kicksat.vid.0=0x2341
 kicksat.pid.0=0x804d
+kicksat.vid.1=0x2341
+kicksat.pid.1=0x004d
 kicksat.upload.tool=bossac
 kicksat.upload.protocol=sam-ba
 kicksat.upload.maximum_size=262144
