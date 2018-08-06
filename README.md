@@ -1,4 +1,14 @@
+## Instructions to update KickSat boards (on Windows)
+
+1. Pack the "kicksat" board folder into a zip file in "kicksat_boards.X.X.zip", replacing X.X with the version number
+2. Move the file "kicksat_boards.X.X.zip" to "/BoardManager-ArduinoIDE/IDE_BoardManager/"
+3. Open file properties to determine the fize size in bytes, then add that info into the JSON file: "package_kicksat_index.json", under "platforms">>"size"
+4. In Windows PowerShell, type: "Get-FileHash -Path kicksat_boards.X.X.zip -Algorithm SHA256 | Format-List" (without quotes and replacing X.X with the version number), then update that info into the JSON file: "package_kicksat_index.json", under "platforms">>"checksum"
+5. Update the "url" and "archiveFileName" in "package_kicksat_index.json" under "platforms"
+
 # Arduino IDE 1.5 3rd party Hardware specification
+
+The readme below is cloned from the Arduino GitHub and is useful for understanding the board-specific files required to create a custom board in Arduino-IDE: https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification#hardware-folders-structure
 
 This specification is a 3rd party Hardware format to be used in Arduino IDE starting from 1.5.x series. \
 This specification allows a 3rd party vendor/maintainer to add support for new boards inside the Arduino IDE by providing a file to unzip into the *hardware* folder of Arduino's sketchbook folder. \
