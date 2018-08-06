@@ -1,4 +1,4 @@
-## Arduino IDE 1.5 3rd party Hardware specification
+# Arduino IDE 1.5 3rd party Hardware specification
 
 This specification is a 3rd party Hardware format to be used in Arduino IDE starting from 1.5.x series. \
 This specification allows a 3rd party vendor/maintainer to add support for new boards inside the Arduino IDE by providing a file to unzip into the *hardware* folder of Arduino's sketchbook folder. \
