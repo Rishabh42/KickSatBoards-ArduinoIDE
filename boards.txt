@@ -41,7 +41,8 @@ kmb20.build.variant_system_lib=
 kmb20.build.vid=0x2341
 kmb20.build.pid=0x804d
 kmb20.bootloader.tool=openocd
-kmb20.bootloader.file=kicksat/samd21_sam_ba_kicksat.hex
+# kmb20.bootloader.file=kicksat/samd21_sam_ba_kicksat.hex
+kmb20.bootloader.file=kicksat_adafruit_samd_feather/samd21_sam_ba_kicksat.hex
 
 # KMB21 (Native USB Port)
 # ---------------------------------------
@@ -70,7 +71,8 @@ kmb21.build.variant_system_lib=
 kmb21.build.vid=0x2341
 kmb21.build.pid=0x804d
 kmb21.bootloader.tool=openocd
-kmb21.bootloader.file=kicksat/samd21_sam_ba_kicksat.hex
+# kmb21.bootloader.file=kicksat/samd21_sam_ba_kicksat.hex
+kmb21.bootloader.file=kicksat_adafruit_samd_feather/samd21_sam_ba_kicksat.hex
 
 # KMB22 (Native USB Port)
 # ---------------------------------------
@@ -99,4 +101,5 @@ kmb22.build.variant_system_lib=
 kmb22.build.vid=0x2341
 kmb22.build.pid=0x804d
 kmb22.bootloader.tool=openocd
-kmb22.bootloader.file=kicksat/samd21_sam_ba_kicksat.hex
+# kmb22.bootloader.file=kicksat/samd21_sam_ba_kicksat.hex
+kmb22.bootloader.file=kicksat_adafruit_samd_feather/samd21_sam_ba_kicksat.hex
