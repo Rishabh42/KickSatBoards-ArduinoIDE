@@ -117,6 +117,7 @@ static const uint8_t DAC0 = PIN_DAC0;
 #define PIN_RF_NIRQ			(14ul) //new
 #define PIN_RF_SDN			(42ul) //new
 #define PIN_I_BATT			(18ul) //new
+#define PIN_VBATT			(0ul)  //new
 #define PIN_ENAB_GPS		(8ul)  //new
 #define PIN_ENAB_BURN1		(25ul) //new
 #define PIN_ENAB_BURN2		(2ul)  //new
@@ -137,6 +138,7 @@ static const uint8_t XTB_RESET = PIN_XTB_RESET; //new
 static const uint8_t RF_NIRQ = PIN_RF_NIRQ; //new
 static const uint8_t RF_SDN = PIN_RF_SDN;  //new
 static const uint8_t I_BATT = PIN_I_BATT;  //new
+static const uint8_t VBATT = PIN_VBATT;  //new
 static const uint8_t ENAB_GPS = PIN_ENAB_GPS; //new
 static const uint8_t ENAB_BURN1 = PIN_ENAB_BURN1; //new
 static const uint8_t ENAB_BURN2 = PIN_ENAB_BURN2; //new
@@ -159,10 +161,10 @@ static const uint8_t WDT_WDI = PIN_WDT_WDI; //new
 #define PAD_SERIAL_RX       (SERCOM_RX_PAD_3)
 
 // Serial1
-#define PIN_SERIAL1_RX       (0ul)
-#define PIN_SERIAL1_TX       (1ul)
+#define PIN_SERIAL1_RX       (UART1_RX)
+#define PIN_SERIAL1_TX       (11ul)
 #define PAD_SERIAL1_TX       (UART_TX_PAD_2)
-#define PAD_SERIAL1_RX       (SERCOM_RX_PAD_3)
+#define PAD_SERIAL1_RX       (SERCOM_RX_PAD_2)
 
 /*
  * SPI Interfaces
