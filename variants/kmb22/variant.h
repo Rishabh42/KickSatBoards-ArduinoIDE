@@ -129,8 +129,8 @@ static const uint8_t DAC0 = PIN_DAC0;
 #define PIN_ENAB_BURN5		(1ul)  //new
 #define PIN_BURN_RELAY_A	(5ul)  //new
 #define PIN_BURN_RELAY_B	(10ul) //new
-#define PIN_UART1_TX		(16ul) //new
-#define PIN_UART1_RX		(15ul) //new
+#define PIN_UART1_TX		(15ul) //new //switched with RX
+#define PIN_UART1_RX		(16ul) //new //switched with TX
 #define PIN_WDT_WDI			(13ul) //new
 static const uint8_t SPI_CS_SD = PIN_SPI_CS_SD; //new
 static const uint8_t SPI_CS_RFM = PIN_SPI_CS_RFM; //new
@@ -167,10 +167,10 @@ static const uint8_t WDT_WDI = PIN_WDT_WDI; //new
 #define PAD_SERIAL_RX       (SERCOM_RX_PAD_3)
 
 // Serial1
-#define PIN_SERIAL1_RX       (0ul)
-#define PIN_SERIAL1_TX       (1ul)
-#define PAD_SERIAL1_TX       (UART_TX_PAD_2)
-#define PAD_SERIAL1_RX       (SERCOM_RX_PAD_3)
+#define PIN_SERIAL1_RX       (UART1_RX)
+#define PIN_SERIAL1_TX       (UART1_TX)
+#define PAD_SERIAL1_TX       (UART_TX_PAD_0)
+#define PAD_SERIAL1_RX       (SERCOM_RX_PAD_1)
 
 /*
  * SPI Interfaces
