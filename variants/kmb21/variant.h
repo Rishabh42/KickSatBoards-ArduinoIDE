@@ -129,6 +129,7 @@ static const uint8_t DAC0 = PIN_DAC0;
 #define PIN_UART1_TX		(10ul) //new //switched with RX
 #define PIN_UART1_RX		(13ul) //new //switched with TX
 #define PIN_WDT_WDI			(12ul) //new
+#define PIN_L1_PROG     (24ul) //new
 static const uint8_t SPI_CS_SD = PIN_SPI_CS_SD; //new
 static const uint8_t SPI_CS_RFM = PIN_SPI_CS_RFM; //new
 static const uint8_t SPI_CS_XTB1 = PIN_SPI_CS_XTB1; //new
@@ -150,6 +151,7 @@ static const uint8_t BURN_RELAY_B = PIN_BURN_RELAY_B; //new
 static const uint8_t UART1_TX = PIN_UART1_TX; //new
 static const uint8_t UART1_RX = PIN_UART1_RX; //new
 static const uint8_t WDT_WDI = PIN_WDT_WDI; //new
+static const uint8_t L1_PROG = PIN_L1_PROG; //new
 
 /*
  * Serial interfaces
