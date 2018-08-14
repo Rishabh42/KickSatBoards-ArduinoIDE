@@ -77,7 +77,7 @@ extern "C"
 // #define digitalPinToTimer(P)
 
 // LEDs
-#define PIN_LED_9			 (4u) //orig 13 instead of 4
+#define PIN_LED_4     			 (4u) //orig 13 instead of 4
 #define PIN_LED_RXL          (25u)
 #define PIN_LED_TXL          (26u)
 #define PIN_LED              PIN_LED_4 //orig 13
