@@ -100,3 +100,32 @@ kmb22.build.vid=0x2341
 kmb22.build.pid=0x804d
 kmb22.bootloader.tool=openocd
 kmb22.bootloader.file=kicksat_adafruit_samd_feather/samd21_kicksat.hex
+
+# KMB23 (Native USB Port)
+# ---------------------------------------
+kmb23.name=KMB23
+kmb23.vid.0=0x2341
+kmb23.pid.0=0x804d
+kmb23.vid.1=0x2341
+kmb23.pid.1=0x004d
+kmb23.upload.tool=bossac
+kmb23.upload.protocol=sam-ba
+kmb23.upload.maximum_size=262144
+kmb23.upload.use_1200bps_touch=true
+kmb23.upload.wait_for_upload_port=true
+kmb23.upload.native_usb=true
+kmb23.build.mcu=cortex-m0plus
+kmb23.build.f_cpu=48000000L
+kmb23.build.usb_product="Arduino Zero"
+kmb23.build.usb_manufacturer="Arduino LLC"
+kmb23.build.board=SAMD_ZERO
+kmb23.build.core=arduino
+kmb23.build.extra_flags=-D__SAMD21G18A__ {build.usb_flags}
+kmb23.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+kmb23.build.openocdscript=openocd_scripts/arduino_zero.cfg
+kmb23.build.variant=kmb23
+kmb23.build.variant_system_lib=
+kmb23.build.vid=0x2341
+kmb23.build.pid=0x804d
+kmb23.bootloader.tool=openocd
+kmb23.bootloader.file=kicksat_adafruit_samd_feather/samd21_kicksat.hex
